@@ -1,6 +1,5 @@
 body{
-    background-color: #f7f9ff;
-    background:linear-gradient(to right,#ffffff,#e1e5f3);
+    background-color: white
 }
 
 .footer{
@@ -663,7 +662,7 @@ p{
     font-weight: 600;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width: 600px){
     .home{
         position: relative;
         left: 12em;
