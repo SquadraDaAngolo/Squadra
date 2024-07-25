@@ -663,7 +663,7 @@ p{
     font-weight: 600;
 }
 
-@media only screen and (max-width:414px){
+@media only screen and (max-width:600px){
     .home{
         position: relative;
         left: 12em;
