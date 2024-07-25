@@ -1,0 +1,69 @@
+#usersList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px;
+    padding: 15px;
+    font-family: "poppins", sans-serif;
+    font-weight: 560;
+}
+
+#usersList div {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.30s;
+}
+
+#usersList div:hover{
+    box-shadow: 0px 0px 30px rgba(175, 0, 0, 0.664);
+    transition: 0.3s;
+}
+
+#usersList strong {
+    color: #575757;
+}
+
+.chiama{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    background: rgba(6, 170, 0, 0.651);
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-weight: 560;
+    position: relative;
+    left: 75%;
+    transition: 0.3s;
+}
+
+.chiama:hover{
+    background: rgb(4, 116, 0);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 1200px) {
+    #usersList {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #usersList {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #usersList {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+
+    .chiama {
+        position: relative;
+        left: 13em;
+        top: 0.5em;
+    }
+}

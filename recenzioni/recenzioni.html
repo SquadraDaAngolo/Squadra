@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenzioni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="footer">
+        <div class="dropdown">
+            <div class="select">
+                <div class="ham-menu" onclick="toggleMenu(this)">
+                    <div class="ham-menu1"></div>
+                    <div class="ham-menu2"></div>
+                    <div class="ham-menu3"></div>
+                </div>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li class="li1"><a href="/servizi/servizi.html" class="l11">Servizi</a></li>
+                <li class="li2"><a href="/login/index.html" class="li11">Lavora con noi</a></li>
+                <li class="li3"><a href="/recenzioni/recenzioni.html" class="l11">Recensioni</a></li>
+            </ul>
+        </div>
+        <a href="/index.html" class="home">Home</a>
+        <img src="/squadra.jpg" alt="" class="squadra">
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Lascia una recenzione/reclamazione!</h2>
+        <div id="recensionList">
+            <ul id="recensionUl" class="recensionUl"></ul>
+        </div>
+    </div>
+    <div class="input-container">
+        <form id="recensionForm">
+            <textarea id="recensionInput" placeholder="Scrivi la tua recenzione qui..."></textarea>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script type="module" src="/login/homepage.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="footer">
+        <div class="dropdown">
+            <div class="select">
+                <div class="ham-menu" onclick="toggleMenu(this)">
+                    <div class="ham-menu1"></div>
+                    <div class="ham-menu2"></div>
+                    <div class="ham-menu3"></div>
+                </div>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li class="li1"><a href="/servizi/servizi.html" class="l11">Servizi</a></li>
+                <li class="li2"><a href="/login/index.html" class="li11">Lavora con noi</a></li>
+                <li class="li3"><a href="/recenzioni/recenzioni.html" class="l11">Recensioni</a></li>
+            </ul>
+        </div>
+        <a href="/index.html" class="home">Home</a>
+        <img src="/squadra.jpg" alt="" class="squadra">
+    </div>
+    <hr>
+    <h1 class="benvenuto">Benvenuto <span id="loggedUserFName1" class="nam"></span> sul tuo account!</h1>
+    <h2 class="dati">I tuoi dati:</h2>
+    <div class="div2">First Name: <span id="loggedUserFName"></span></div>
+    <div class="div1">Last Name: <span id="loggedUserLName"></span></div>
+    <div class="div1">Città: <span id="loggedUserfCitta"></span></div>
+    <div class="div1">Email: <span id="loggedUserEmail"></span></div>
+    <div class="div1">Numero di telefono: <span id="loggedUserEmail"></span></div>
+    <div class="div1">Servizi: <span id="loggedUserfNumero"></span></div>
+    <button id="logout">Logout</button>
+
+    <div class="come">
+        <h3>Come Funziona?</h3>
+        <p>1. Accedi alla sezione "Lavora con noi" e iscriviti sul nostro sito (se hai già un account, accedi).
+            <br>
+            2. Prima di iscriverti, devi pagare 5$ al mese (il primo mese è gratuito).
+            <br>
+            3. Tutto il guadagno dai clienti è tuo, tranne i 5 euro al mese.
+            <br>
+            4. Perché lavorare da solo quando puoi lavorare con la nostra azienda? Con la nostra azienda ti puoi promuovere e avere più clienti.
+        </p>
+    </div>
+
+    <div class="contattarci">
+        <h3 style="font-family: sans-serif;">Hai bisogno di contattarci?</h3>
+        <p><b>Email:</b> <a href="mailto:squadradangolo@gmail.com">squadradangolo@gmail.com</a></p>
+        <p><b>Numero di telefono:</b> <a href="tel:3514140748">3514140748</a></p>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

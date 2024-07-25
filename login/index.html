@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <div class="footer">
+        <div class="dropdown">
+            <div class="select">
+                <div class="ham-menu" onclick="toggleMenu(this)">
+                    <div class="ham-menu1"></div>
+                    <div class="ham-menu2"></div>
+                    <div class="ham-menu3"></div>
+                </div>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li class="li1"><a href="/servizi/servizi.html" class="l11">Servizi</a></li>
+              <li class="li2"><a href="/login/index.html" class="li11">Lavora con noi</a></li>
+              <li class="li3"><a href="/recenzioni/recenzioni.html" class="l11">Recensioni</a></li>
+            </ul>
+        </div>
+        <a href="/index.html" class="home">Home</a>
+        <img src="/squadra.jpg" alt="" class="squadra">
+        <hr class="hr">
+
+    </div>
+    <div class="container" id="signup" style="display:none;">
+      <h1 class="form-title">Iscriviti</h1>
+      <form method="post" action="">
+        <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+        <div class="input-group">
+           <i class="fas fa-user"></i>
+           <input type="text"  id="fName" placeholder="First Name" required>
+           <label for="fname">Nome</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text"  id="lName" placeholder="Last Name" required>
+            <label for="lName">Cognome</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text"  id="fCitta" placeholder="Città" required>
+            <label for="fCitta">Città</label>
+         </div>
+         <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text"  id="fRegione" placeholder="Regione" list="scripts" required>
+          <datalist id="scripts">
+            <option value="Abruzzo">
+            <option value="Basilicata">
+            <option value="Calabria">
+            <option value="Campania">
+            <option value="Emilia-Romagna">
+            <option value="Friuli-Venezia Giulia">
+            <option value="Lazio">
+            <option value="Liguria">
+            <option value="Lombardia">
+            <option value="Marche">
+            <option value="Molise">
+            <option value="Piemonte">
+            <option value="Puglia">
+            <option value="Sardegna">
+            <option value="Sicilia">
+            <option value="Toscana">
+            <option value="Trentino-Alto Adige">
+            <option value="Umbria">
+            <option value="Valle d'Aosta">
+            <option value="Veneto">
+        </datalist>
+        <label for="fRegione">Regione</label>
+       </div>
+         <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text"  id="fEta" placeholder="Età" required>
+            <label for="fEta">Età</label>
+         </div>
+         <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text"  id="fNumero" placeholder="Numero di telefono" required>
+          <label for="fNumero">Numero</label>
+        </div>
+         <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text"  id="fServizi" placeholder="Servizi" list="scripts1" required>
+            <datalist id="scripts1">
+                <option value="Piccoli lavori idraulici">
+                <option value="Piccoli lavori elettrici">
+                <option value="lavori di pittura" >
+                <option value="traslochi/sgombero">
+            </datalist>
+            <label for="fServizi">Servizi</label>
+         </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email"  id="rEmail" placeholder="Email" required>
+            <label for="rEmail">Email</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="rPassword"  placeholder="Password" required>
+            <label for="rPassword">Password</label>
+        </div>
+        <br>
+        <div id="paypal-button-container-P-5N260480SF447990XM2KDDBY"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AWDnh2CDPWYuK1UMWQiHxIvJ3R8HsTXMR0b7fvUfnmC22BhJHiQZOSZKrRK1IfCj6p6xrSzLx5n0dec7&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  /* Creates the subscription */
+                  plan_id: 'P-5N260480SF447990XM2KDDBY'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+              }
+          }).render('#paypal-button-container-P-5N260480SF447990XM2KDDBY'); // Renders the PayPal button
+        </script>
+<br>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <p style="font-size: 13px; position: relative; font-weight: 600; left: 35px;">acceta i termini e condizioni</p>
+<br>
+       <button class="btn" id="submitSignUp">Crea un account</button>
+      </form>
+      <p class="or">
+        ----------or--------
+      </p>
+      <div class="icons">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+      </div>
+      <div class="links">
+        <p>Hai già un account?</p>
+        <button id="signInButton">Registrati</button>
+      </div>
+    </div>
+
+  <div class="container" id="signIn"> 
+        <h1 class="form-title">Registrati</h1>
+        <form method="post" action="">
+          <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+          <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email"  id="email" placeholder="Email" required>
+              <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+            <input type="password" id="password"  placeholder="Password" required>
+              <label for="password">Password</label>
+          </div>
+          <p class="recover">
+            <a href="#">Recupera la password</a>
+          </p>
+         <button  class="btn"  id="submitSignIn">Registrati</button>
+        </form>
+        <p class="or">
+          ----------or--------
+        </p>
+        <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+          <p>Non hai ancora un account?</p>
+          <button id="signUpButton">Iscriviti</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="/script.js"></script>
+</body>
+</html>

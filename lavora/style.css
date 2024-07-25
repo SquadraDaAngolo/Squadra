@@ -1,0 +1,153 @@
+body{
+    background-color: #f7f9ff;
+    background:linear-gradient(to right,#ffffff,#e1e5f3);
+}
+h1{
+    text-align:center;
+
+}
+button{
+    color:blueviolet;
+    background-color:#c9d6ff;
+    padding:5px;
+    border-radius:5px;
+    font-size:1rem;
+    font-weight:bold;
+    border:none;
+}
+button:hover{
+    text-decoration: underline;
+    color:blue;
+}
+.div1{
+    margin-left: 5%;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    max-width: 18em;
+}
+.div2{
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+button{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    padding: 10px;
+    font-size:20px;
+}
+div{
+    font-weight:500;
+    color:black;
+}
+span{
+    font-weight:600;
+    font-size:22px;
+    color:black;
+}
+
+.img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50em;
+    transition: 0.5s;
+    position: relative;
+    top: 3em;
+    left: 8em;
+}
+.img:hover{
+    transform: scale(1.2);
+}
+
+.file{
+    display: none;
+}
+
+.inpput{
+    position: relative;
+    top: 5em;
+    right: 1.5em;
+    font-family: "Poppins", sans-serif;
+    padding: 0.5em 1em 0.5em 1em;
+    background: rgb(255, 93, 30);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.come{
+    position: absolute;
+    max-width: 32em;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    left: 60%;
+    top: 11.5em;
+}
+
+.contattarci{
+    font-family: sans-serif;
+    position: absolute;
+    top: 42em;
+    left: 5em;
+    font-size: 1.1em;
+}
+
+.dati{
+    position: absolute;
+    left: 4em;
+}
+
+.benvenuto{
+    font-size: 30px; 
+    font-family: sans-serif; 
+    font-weight: 500;
+}
+
+.nam{
+    font-size: 30px;
+}
+
+@media only screen and (max-width:414px){
+    .come{
+        position: relative;
+        left: 0em;
+    }
+    .contattarci{
+        position: relative;
+        top: 13em;
+    }
+    .div1{
+        position: relative;
+        top: 2em;
+        font-size: 20px;
+    }
+    .div2{
+        position: relative;
+        top: 2em;
+        font-size: 20px;
+    }
+    .dati{
+        position: absolute;
+        left: 1.4em;
+        font-size: 20px;
+    }
+    button{
+        position: relative;
+        top: 4em;
+        left: 15em;
+    }
+    .benvenuto{
+        font-size: 23px;
+    }
+    .nam{
+        font-size: 23px;
+    }
+    .come h3{
+        text-align: center;
+    }
+    .come{
+        background: rgb(204, 204, 204);
+        text-align: start;
+    }
+}
