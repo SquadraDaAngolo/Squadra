@@ -914,7 +914,7 @@ p{
 @media screen and (max-width: 900px) and (min-width: 600px){
     html,body{
         width: 100%;
-        height: 179%;
+        height: 195%;
         margin: 0px;
         padding: 0px;
         overflow-x: hidden; 
@@ -1033,9 +1033,10 @@ p{
     .elettrici{
         width: 25em;
         position: absolute;
-        left: 0.5em;
+        left: 50%;
         padding-bottom: 0em;
         top: 75em;
+        transform: translate(-50%, 0);
     }
 
     .elett{
@@ -1067,8 +1068,9 @@ p{
         top: 98em;
         width: 25em;
         position: absolute;
-        left: 0.5em;
+        left: 50%;
         padding-bottom: 0em;
+        transform: translate(-50%, 0);
     }
 
     .def3{
@@ -1095,8 +1097,9 @@ p{
         position: absolute;
         top: 121em;
         width: 25em;
-        left: 0.5em;
+        left: 50%;
         padding-bottom: 0em;
+        transform: translate(-50%, 0);
     }
 
     .def4{
@@ -1123,24 +1126,27 @@ p{
         background: rgb(204, 204, 204);
         width: 17em;
         position: relative;
-        left: 12.5em;
+        left: 50%;
         top: 130em;
+        transform: translate(-50%, 0);
     }
 
     .funziona{
         background: rgb(204, 204, 204);
         width: 17em;
         position: relative;
-        left: 0em;
+        left: 50%;
         top: 135em;
+        transform: translate(-50%, 0);
     }
 
     .funziona2{
         background: rgb(204, 204, 204);
         width: 17em;
         position: relative;
-        left: 0em;
+        left: 50%;
         top: 140em;
+        transform: translate(-50%, 0);
     }
 
     .f1{
