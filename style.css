@@ -666,8 +666,8 @@ p{
 @media only screen and (max-width: 600px){
 
     html,body{
-        width: 80%;
-        height: 210%;
+        width: auto;
+        height: auto;
         margin: 0px;
         padding: 0px;
         overflow-x: hidden; 
