@@ -911,7 +911,7 @@ p{
     }
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px){
+@media screen and (max-width: 1268px) and (min-width: 600px){
     html,body{
         width: 100%;
         height: 195%;
@@ -1153,4 +1153,274 @@ p{
         position: relative;
         top: 150em;
     }
+}
+
+@media screen and (max-width: 1743px) and (min-width: 1268px){
+    html,body{
+        width: 100%;
+        height: 195%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    .title{
+        position: absolute;
+        left: -10em;
+        transform: translate(100%, 0);
+        min-width: 10em;
+    }
+    .subtitle{
+        position: absolute;
+        left: -10em;
+        transform: translate(85%, 0);
+        min-width: 10em;
+    }
+    .home{
+        position: absolute;
+        right: 7em;
+        top: 1.5em;
+        transform: translate(-100%, 0);
+    }
+    .menu{
+        position: absolute;
+        top: 3em;
+        right: calc(0 + 35em);
+        padding: 0.5em;
+        width: 10%;
+    }
+    .chi2{
+        position: absolute;
+        right: 0em;
+        top: 1.5em;
+        min-width: 10em;
+        transform: translate(0%, 0);
+    }
+    .contatti{
+        position: absolute;
+        right: 19em;
+        top: 1.5em;
+        transform: translate(40%, 0);
+    }
+    .ham-menu{
+        position: absolute;
+        right: 0em;
+        top: 2em;
+        width: 2em;
+        transform: translate(-100%, 0);
+    }
+    .squadra{
+        width: 5em;
+        height: 5em;
+        position: absolute;
+        top: 0.5em;
+    }
+    .img1 {
+        position: absolute;
+        top: 42em;
+        left: 13%;
+        width: 22em;
+        height: 14em;
+        transform: translate(-50%, -50%);
+    }
+    .ser11 {
+        position: relative;
+        left: 30%;
+        top: 17.5em;
+        font-size: 2em;
+        transform: translate(-50%, -50%);
+    }
+    .img2 {
+        position: absolute;
+        top:35em;
+        left: 50%;
+        width: 22em;
+        height: 14em;
+        transform: translate(-50%, 0);
+    }
+    .lav22 {
+        position: absolute;
+        left: 50%;
+        top: 21em;
+        font-size: 2em;
+        transform: translate(-50%, -50%);
+    }
+    .img3 {
+        position: absolute;
+        top:35em;
+        left: 87.5%;
+        width: 22em;
+        height: 14em;
+        transform: translate(-50%, 0);
+    }
+    .rec33 {
+        position: absolute;
+        left: 88%;
+        top: 21em;
+        font-size: 2em;
+        transform: translate(-50%, -50%);
+    }
+    .offerta{
+        visibility: collapse;
+    }
+
+    .grid3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px
+    }
+
+    .hidraulici {
+        position: absolute;
+        left: 50%;
+        width: 25em;
+        transform: translate(-50%, 0);
+    }
+    .idraulico {
+        visibility: collapse;
+    }
+    .def1 {
+        position: absolute;
+        left: 0em;
+        top: 1em;
+        max-width: 23em;
+        transform: translate(5%, 0);
+    }
+    .idra {
+        position: absolute;
+        left: 50%;
+        top: 10em;
+        transform: translate(-50%, 0);
+    }
+    .idra2 {
+        position: absolute;
+        left: 50%;
+        top: 13em;
+        padding-bottom: 25px;
+        transform: translate(-50%, 0);
+    }
+
+    .elettrici{
+        width: 25em;
+        position: absolute;
+        left: 50%;
+        padding-bottom: 0em;
+        top: 75em;
+        transform: translate(-50%, 0);
+    }
+
+    .elett{
+        visibility: collapse;
+    }
+
+    .def2{
+        position: absolute;
+        left: 2em;
+        top: 1em;
+        max-width: 23em;
+    }
+
+    .ele{
+        position: absolute;
+        left: 8em;
+        top: 10em;
+    }
+    
+    .ele2{
+        position: absolute;
+        left: 10em;
+        top: 13em;
+        padding-bottom: 25px;
+    }
+
+    .pittura{
+        position: absolute;
+        top: 98em;
+        width: 25em;
+        position: absolute;
+        left: 50%;
+        padding-bottom: 0em;
+        transform: translate(-50%, 0);
+    }
+
+    .def3{
+        position: absolute;
+        left: 2em;
+        top: 1em;
+        max-width: 23em;
+    }
+    
+    .pit{
+        position: absolute;
+        left: 8em;
+        top: 12em;
+    }
+
+    .pit2{
+        position: absolute;
+        left: 10em;
+        top: 15em;
+        padding-bottom: 25px;
+    }
+
+    .traslochi{
+        position: absolute;
+        top: 121em;
+        width: 25em;
+        left: 50%;
+        padding-bottom: 0em;
+        transform: translate(-50%, 0);
+    }
+
+    .def4{
+        position: absolute;
+        left: 2em;
+        top: 1em;
+        max-width: 22em;
+    }
+
+    .tras{
+        position: absolute;
+        left: -11.5em;
+        top: 12em;
+    }
+
+    .tras2{
+        position: absolute;
+        left: 7.5em;
+        top: 16em;
+        padding-bottom: 25px;
+    }
+
+    .chi{
+        background: rgb(204, 204, 204);
+        width: 17em;
+        position: relative;
+        left: 50%;
+        top: 130em;
+        transform: translate(-50%, 0);
+    }
+
+    .funziona{
+        background: rgb(204, 204, 204);
+        width: 17em;
+        position: relative;
+        left: 50%;
+        top: 135em;
+        transform: translate(-50%, 0);
+    }
+
+    .funziona2{
+        background: rgb(204, 204, 204);
+        width: 17em;
+        position: relative;
+        left: 50%;
+        top: 140em;
+        transform: translate(-50%, 0);
+    }
+
+    .f1{
+        position: relative;
+        top: 150em;
+    }
+
 }
