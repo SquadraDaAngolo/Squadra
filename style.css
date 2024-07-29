@@ -878,7 +878,7 @@ p{
     .chi{
         background: rgb(204, 204, 204);
         width: 17em;
-        position: relative;
+        position: absolute;
         left: 50%;
         top: 130em;
         transform: translate(-50%, 0);
@@ -887,7 +887,7 @@ p{
     .funziona{
         background: rgb(204, 204, 204);
         width: 17em;
-        position: relative;
+        position: absolute;
         left: 50%;
         top: 132em;
         transform: translate(-50%, 0);
