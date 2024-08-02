@@ -1223,7 +1223,7 @@ p{
         transform: translate(-50%, -50%);
     }
     .ser11 {
-        position: relative;
+        position: absolute;
         left: 30%;
         top: 17.5em;
         font-size: 2em;
@@ -1269,126 +1269,113 @@ p{
         gap: 10px
     }
 
-    .hidraulici {
+    .hidraulici{
+        width: 50%;
+        height: 20em;
+        background: #333;
         position: absolute;
-        left: 50%;
-        width: 25em;
-        transform: translate(-50%, 0);
-    }
-    .idraulico {
-        visibility: collapse;
-    }
-    .def1 {
-        position: absolute;
-        left: 0em;
-        top: 1em;
-        max-width: 23em;
-        transform: translate(5%, 0);
-    }
-    .idra {
-        position: absolute;
-        left: 50%;
-        top: 10em;
-        transform: translate(-50%, 0);
-    }
-    .idra2 {
-        position: absolute;
-        left: 50%;
-        top: 13em;
-        padding-bottom: 25px;
-        transform: translate(-50%, 0);
-    }
-
-    .elettrici{
-        width: 25em;
-        position: absolute;
-        left: 50%;
-        padding-bottom: 0em;
-        top: 75em;
-        transform: translate(-50%, 0);
-    }
-
-    .elett{
-        visibility: collapse;
-    }
-
-    .def2{
-        position: absolute;
-        left: 2em;
-        top: 1em;
-        max-width: 23em;
-    }
-
-    .ele{
-        position: absolute;
-        left: 8em;
-        top: 10em;
+        top: 64em;
+        border-radius: 5em;
+        transform: translate(5%, 0%);
     }
     
+    .idraulico{
+        width: 25em;
+        height: 18em;
+        padding-top: 1em;
+        padding-left: 1em;
+        border-radius: 5em;
+    }
+    
+    .def1{
+       max-width: 40%;
+       position: absolute;
+       bottom: 8em;
+       left: 28em;
+       color: white;
+    }
+    
+    .elettrici{
+        width: 50%;
+        height: 20em;
+        background: #333;
+        position: absolute;
+        top: 90em;
+        left: 0em;
+        border-radius: 5em;
+        transform: translate(95%, 0%);
+    }
+
     .ele2{
         position: absolute;
-        left: 10em;
-        top: 13em;
-        padding-bottom: 25px;
-    }
-
-    .pittura{
-        position: absolute;
-        top: 98em;
-        width: 25em;
-        position: absolute;
-        left: 50%;
-        padding-bottom: 0em;
-        transform: translate(-50%, 0);
-    }
-
-    .def3{
-        position: absolute;
-        left: 2em;
-        top: 1em;
-        max-width: 23em;
     }
     
-    .pit{
-        position: absolute;
-        left: 8em;
-        top: 12em;
+    .elett{
+        width: 30em;
+        height: 18em;
+        padding-top: 1em;
+        padding-left: 1em;
+        border-radius: 5em;
     }
-
-    .pit2{
-        position: absolute;
-        left: 10em;
-        top: 15em;
-        padding-bottom: 25px;
+    
+    .def2{
+       max-width: 40%;
+       position: absolute;
+       bottom: 18em;
+       left: 33em;
+       color: white;
     }
-
+    
+    .pittura{
+        width: 50%;
+        height: 20em;
+        background: #333;
+        position: absolute;
+        top: 115em;
+        border-radius: 5em;
+    }
+    
+    .elett{
+        width: 30em;
+        height: 18em;
+        padding-top: 1em;
+        padding-left: 1em;
+        border-radius: 5em;
+    }
+    
+    .def3{
+       max-width: 40%;
+       position: absolute;
+       bottom: 8em;
+       left: 33em;
+       color: white;
+    }
+    
     .traslochi{
+        width: 50%;
+        height: 20em;
+        background: #333;
         position: absolute;
-        top: 121em;
-        width: 25em;
-        left: 50%;
-        padding-bottom: 0em;
-        transform: translate(-50%, 0);
+        top: 150em;
+        left: 70em;
+        border-radius: 5em;
+        transform: translate(-50%, -50%);
     }
-
-    .def4{
-        position: absolute;
-        left: 2em;
-        top: 1em;
-        max-width: 22em;
-    }
-
+    
     .tras{
-        position: absolute;
-        left: -11.5em;
-        top: 12em;
+        width: 30em;
+        height: 18em;
+        padding-top: 1em;
+        padding-left: 1em;
+        border-radius: 5em;
     }
-
-    .tras2{
-        position: absolute;
-        left: 7.5em;
-        top: 16em;
-        padding-bottom: 25px;
+    
+    .def4{
+       max-width: 40%;
+       position: absolute;
+       bottom: 6em;
+       left: 30em;
+       color: white;
     }
 
     .chi{
@@ -1398,6 +1385,7 @@ p{
         left: 50%;
         top: 130em;
         transform: translate(-50%, 0);
+        visibility: collapse;
     }
 
     .funziona{
@@ -1407,6 +1395,7 @@ p{
         left: 50%;
         top: 135em;
         transform: translate(-50%, 0);
+        visibility: collapse;
     }
 
     .funziona2{
@@ -1416,6 +1405,7 @@ p{
         left: 50%;
         top: 140em;
         transform: translate(-50%, 0);
+        visibility: collapse;
     }
 
     .f1{
