@@ -1161,7 +1161,6 @@ p{
         height: 195%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
     }
     .title{
         position: absolute;
@@ -1191,9 +1190,12 @@ p{
     .chi2{
         position: absolute;
         right: 0em;
-        top: 1.5em;
+        top: 2.1em;
         min-width: 10em;
         transform: translate(0%, 0);
+        margin: 0;
+        padding: 0;
+        line-height: 0;
     }
     .contatti{
         position: absolute;
@@ -1224,8 +1226,8 @@ p{
     }
     .ser11 {
         position: absolute;
-        left: 30%;
-        top: 17.5em;
+        left: 12.5%;
+        top: 21em;
         font-size: 2em;
         transform: translate(-50%, -50%);
     }
@@ -1286,13 +1288,26 @@ p{
         padding-left: 1em;
         border-radius: 5em;
     }
-    
+    .idra{
+        position: absolute;
+        top: 12em;
+        left: 33em;
+        transform: translate(0%, 0%);
+    }
+    .idra2{
+        position: absolute;
+        top: 15em;
+        left: 35em;
+        padding-bottom: 1.5em;
+        transform: translate(0%, 0%);
+    }
     .def1{
        max-width: 40%;
        position: absolute;
        bottom: 8em;
        left: 28em;
        color: white;
+       transform: translate(0%, 0%);
     }
     
     .elettrici{
@@ -1306,24 +1321,29 @@ p{
         transform: translate(95%, 0%);
     }
 
+    .ele{
+        position: absolute;
+        left: 32em;
+        top: 11em;
+        padding-bottom: 3em;
+        transform: translate(0%, 0%);
+    }
+
     .ele2{
         position: absolute;
-    }
-    
-    .elett{
-        width: 30em;
-        height: 18em;
-        padding-top: 1em;
-        padding-left: 1em;
-        border-radius: 5em;
+        top: 15em;
+        left: 34em;
+        padding-bottom: 1.5em;
+        transform: translate(0%, 0%);
     }
     
     .def2{
        max-width: 40%;
        position: absolute;
-       bottom: 18em;
-       left: 33em;
+       bottom: 10em;
+       left: 28em;
        color: white;
+       transform: translate(0%, 0%);
     }
     
     .pittura{
@@ -1331,24 +1351,42 @@ p{
         height: 20em;
         background: #333;
         position: absolute;
-        top: 115em;
+        top: 115em; 
         border-radius: 5em;
+        transform: translate(5%, 0%);
+    }
+
+    .pit{
+        position: absolute;
+        top: 13.5em;
+        left: 33em;
+        transform: translate(0%, 0%);
+    }
+
+    .pit2{
+        position: absolute;
+        left: 35em;
+        top: 16.5em;
+        padding-bottom: 1.5em;
+        transform: translate(0%, 0%);
     }
     
     .elett{
-        width: 30em;
+        width: 25em;
         height: 18em;
         padding-top: 1em;
         padding-left: 1em;
         border-radius: 5em;
+        transform: translate(0%, 0%);
     }
     
     .def3{
        max-width: 40%;
        position: absolute;
-       bottom: 8em;
-       left: 33em;
+       bottom: 6em;
+       left: 29em;
        color: white;
+       transform: translate(0%, 0%);
     }
     
     .traslochi{
@@ -1368,49 +1406,121 @@ p{
         padding-top: 1em;
         padding-left: 1em;
         border-radius: 5em;
+        transform: translate(0%, 0%);
     }
     
     .def4{
        max-width: 40%;
        position: absolute;
        bottom: 6em;
-       left: 30em;
+       left: 27em;
        color: white;
+       transform: translate(0%, 0%);
+    }
+
+    .tras{
+        position: absolute;
+        left: 12em;
+        top: 12em;
+        transform: translate(0%, 0%);
+    }
+
+    .tras2{
+        position: absolute;
+        left: 30em;
+        top: 16em;
+        padding-bottom: 1.5em;
+        transform: translate(0%, 0%);
     }
 
     .chi{
         background: rgb(204, 204, 204);
-        width: 17em;
+        width: 30em;
         position: relative;
         left: 50%;
-        top: 130em;
+        top: 160em;
         transform: translate(-50%, 0);
-        visibility: collapse;
+       
     }
 
     .funziona{
-        background: rgb(204, 204, 204);
-        width: 17em;
         position: relative;
-        left: 50%;
-        top: 135em;
-        transform: translate(-50%, 0);
-        visibility: collapse;
+        top: 166em;
+        max-width: 35em;
+        left: 6em;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0px 0px 1px #424242;
+        transition: 0.3s;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500
+    }
+    
+    .funziona:hover{
+        transition: 0.3s;
+        box-shadow: 0px 0px 10px #4242427e;
+    }
+    
+    .funziona2{
+        position: relative;
+        top: 150em;
+        max-width: 30em;
+        left: 60em;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0px 0px 1px #424242;
+        transition: 0.3s;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500
+    }
+    
+    .funziona2:hover{
+        transition: 0.3s;
+        box-shadow: 0px 0px 10px #4242427e;
     }
 
-    .funziona2{
-        background: rgb(204, 204, 204);
-        width: 17em;
+    .chi2{
         position: relative;
-        left: 50%;
-        top: 140em;
-        transform: translate(-50%, 0);
-        visibility: collapse;
+        left: 78%;
+        top: 0.1em;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    
+    .chi2::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        border-radius: 5px;
+        height: 0.2em;
+        bottom: -5px;
+        left: 0;
+        background: currentcolor;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        color: red;
+        
+    }
+    
+    .chi2:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        color: green;
     }
 
     .f1{
         position: relative;
-        top: 150em;
+        top: 166em;
+        left: 2.2em;
+        width: 100%;
     }
 
 }
