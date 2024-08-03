@@ -1190,7 +1190,7 @@ p{
     .chi2{
         position: absolute;
         right: 0em;
-        top: 10em;
+        top: 2em;
         min-width: 10em;
         margin: 0;
         padding: 0;
@@ -1443,12 +1443,13 @@ p{
     }
 
     .funziona{
+        transform: translateX(0%);
+        left: calc(50% - 40em);
         position: relative;
         top: 166em;
         max-width: 35em;
-        left: 6em;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
         padding-top: 10px;
         padding-bottom: 10px;
         box-shadow: 0px 0px 1px #424242;
@@ -1457,18 +1458,20 @@ p{
         font-weight: 500
     }
     
+    
     .funziona:hover{
         transition: 0.3s;
         box-shadow: 0px 0px 10px #4242427e;
     }
     
     .funziona2{
+        transform: translateX(0%);
+        left: calc(50% + 10em);
         position: relative;
         top: 150em;
         max-width: 30em;
-        left: 60em;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
         padding-top: 10px;
         padding-bottom: 10px;
         box-shadow: 0px 0px 1px #424242;
@@ -1482,18 +1485,17 @@ p{
         box-shadow: 0px 0px 10px #4242427e;
     }
 
-    .chi2{
+    .chi{
         position: relative;
         left: 78%;
-        top: 0.1em;
-        color: rgb(255, 255, 255);
+        top: 155em;
+        left: 50em;
+        background-color: rgb(255, 255, 255);
         text-decoration: none;
         font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 1.3em;
     }
     
-    .chi2::after{
+    .chi::after{
         content: '';
         position: absolute;
         width: 100%;
@@ -1506,10 +1508,9 @@ p{
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
         color: red;
-        
     }
     
-    .chi2:hover::after {
+    .chi:hover::after {
         transform: scaleX(1);
         transform-origin: bottom left;
         color: green;
