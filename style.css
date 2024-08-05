@@ -684,6 +684,7 @@ p{
         top: 3em;
         left: 19em;
         min-width: 10em;
+        transform: translate(-20%, 0);
     }
     .chi2{
         visibility: collapse;
