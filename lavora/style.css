@@ -1,10 +1,11 @@
-body{
+body,html{
     background-color: #f7f9ff;
     background:linear-gradient(to right,#ffffff,#e1e5f3);
+    height: 100%;
+    width: 100%;
 }
 h1{
     text-align:center;
-
 }
 button{
     color:blueviolet;
@@ -96,6 +97,7 @@ span{
 .dati{
     position: absolute;
     left: 4em;
+    transform: translate(-50%, -100%);
 }
 
 .benvenuto{
@@ -108,14 +110,20 @@ span{
     font-size: 30px;
 }
 
-@media only screen and (max-width:414px){
+@media only screen and (max-width: 600px){
     .come{
         position: relative;
-        left: 0em;
+        left: 0em; 
+        top: 7em; 
+        background-color: white;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
     }
     .contattarci{
         position: relative;
-        top: 13em;
+        top: 10em;
+        left: 4em;
     }
     .div1{
         position: relative;
@@ -129,12 +137,13 @@ span{
     }
     .dati{
         position: absolute;
-        left: 1.4em;
+        left: 3em;
+        top: 8.5em;
         font-size: 20px;
     }
     button{
         position: relative;
-        top: 4em;
+        top: 5em;
         left: 15em;
     }
     .benvenuto{
@@ -149,5 +158,17 @@ span{
     .come{
         background: rgb(204, 204, 204);
         text-align: start;
+    }
+}
+
+@media screen and (max-width: 2031px) and (min-width: 600px){
+    .come{
+        position: absolute;
+        transform: translate(-30%, 0);
+    }
+    button{
+        position: relative;
+        left: 78em;
+        top: 22em;
     }
 }
