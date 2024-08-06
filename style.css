@@ -1222,6 +1222,7 @@ p{
         left: 13%;
         width: 22em;
         height: 14em;
+        padding-left: 1em;
         transform: translate(-50%, -50%);
     }
     .ser11 {
@@ -1252,6 +1253,7 @@ p{
         left: 87.5%;
         width: 22em;
         height: 14em;
+        padding-right: 1em;
         transform: translate(-50%, 0);
     }
     .rec33 {
@@ -1520,7 +1522,6 @@ p{
     .f1{
         position: relative;
         top: 166em;
-        left: 2.2em;
         width: 100%;
     }
 
