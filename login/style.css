@@ -152,8 +152,8 @@ button:hover{
 }
 
 .home{
-    position: relative;
-    top: 0.5em;
+    position: absolute;
+    top: 1.3em;
 }
 
 .hr{
