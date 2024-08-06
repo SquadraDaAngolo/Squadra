@@ -682,9 +682,9 @@ p{
     .menu{
         position: absolute;
         top: 3em;
-        left: 15em;
+        left: 19em;
         min-width: 10em;
-        transform: translate(-20%, 0);
+        transform: translate(-90%, 0);
     }
     .chi2{
         visibility: collapse;
@@ -932,6 +932,7 @@ p{
         top: 3em;
         right: calc(0 + 35em);
         padding-right: 7em;
+        transform: translate(-50%, 0);
     }
     .chi2{
         visibility: collapse;
