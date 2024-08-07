@@ -915,7 +915,7 @@ p{
 @media screen and (max-width: 1268px) and (min-width: 600px){
     html,body{
         width: 100%;
-        height: 195%;
+        height: 210%;
         margin: 0px;
         padding: 0px;
         overflow-x: hidden; 
@@ -1127,33 +1127,36 @@ p{
     .chi{
         background: rgb(204, 204, 204);
         width: 17em;
-        position: relative;
+        position: absolute;
         left: 50%;
-        top: 130em;
+        top: 148em;
         transform: translate(-50%, 0);
     }
 
     .funziona{
         background: rgb(204, 204, 204);
         width: 17em;
-        position: relative;
+        position: absolute;
         left: 50%;
-        top: 135em;
+        top: 175em;
         transform: translate(-50%, 0);
     }
 
     .funziona2{
         background: rgb(204, 204, 204);
         width: 17em;
-        position: relative;
+        position: absolute;
         left: 50%;
-        top: 140em;
+        top: 210em;
         transform: translate(-50%, 0);
     }
 
     .f1{
-        position: relative;
-        top: 150em;
+        position: absolute;
+        top: 237.5em;
+        left: 0%;
+        width: 100%;
+        transform: translate(0%, 0);
     }
 }
 
