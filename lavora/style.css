@@ -1,55 +1,66 @@
-body,html{
+body, html {
     background-color: #f7f9ff;
-    background:linear-gradient(to right,#ffffff,#e1e5f3);
+    background: linear-gradient(to right, #ffffff, #e1e5f3);
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
 }
-h1{
-    text-align:center;
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
-button{
-    color:blueviolet;
-    background-color:#c9d6ff;
-    padding:5px;
-    border-radius:5px;
-    font-size:1rem;
-    font-weight:bold;
-    border:none;
+
+h1 {
+    text-align: center;
 }
-button:hover{
-    text-decoration: underline;
-    color:blue;
-}
-.div1{
-    margin-left: 5%;
-    font-size: 25px;
-    font-family: "Poppins", sans-serif;
-    max-width: 18em;
-}
-.div2{
-    margin-left: 5%;
-    margin-top: 5%;
-    font-size: 25px;
-    font-family: "Poppins", sans-serif;
-}
-button{
-    position: absolute;
+
+button {
+    color: blueviolet;
+    background-color: #c9d6ff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    position: fixed;
     right: 5%;
     bottom: 5%;
     padding: 10px;
-    font-size:20px;
-}
-div{
-    font-weight:500;
-    color:black;
-}
-span{
-    font-weight:600;
-    font-size:22px;
-    color:black;
+    font-size: 20px;
 }
 
-.img{
+button:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.div1, .div2 {
+    margin-left: 5%;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.div2 {
+    margin-top: 5%;
+}
+
+div {
+    font-weight: 500;
+    color: black;
+}
+
+span {
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+}
+
+.img {
     width: 10em;
     height: 10em;
     border-radius: 50em;
@@ -58,26 +69,27 @@ span{
     top: 3em;
     left: 8em;
 }
-.img:hover{
+
+.img:hover {
     transform: scale(1.2);
 }
 
-.file{
+.file {
     display: none;
 }
 
-.inpput{
+.inpput {
     position: relative;
     top: 5em;
     right: 1.5em;
     font-family: "Poppins", sans-serif;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 1em;
     background: rgb(255, 93, 30);
     color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
-.come{
+.come {
     position: absolute;
     max-width: 32em;
     font-size: 1.2em;
@@ -86,7 +98,7 @@ span{
     top: 11.5em;
 }
 
-.contattarci{
+.contattarci {
     font-family: sans-serif;
     position: absolute;
     top: 42em;
@@ -94,23 +106,31 @@ span{
     font-size: 1.1em;
 }
 
-.dati{
+.dati {
     position: absolute;
-    left: 4em;
-    transform: translate(-50%, -100%);
+    left: 6.3em;
+    transform: translate(-50%, 205%);
 }
 
-.benvenuto{
-    font-size: 30px; 
-    font-family: sans-serif; 
+.benvenuto {
+    font-size: 30px;
+    font-family: sans-serif;
     font-weight: 500;
 }
 
-.nam{
+.nam {
     font-size: 30px;
 }
 
 @media only screen and (max-width: 600px){
+    body, html{
+        height: 120%;
+    }
+    .home{
+        position: absolute;
+        left: 5em;
+        transform: translate(50%, 0);
+    }
     .come{
         position: relative;
         left: 0em; 
@@ -140,6 +160,7 @@ span{
         left: 3em;
         top: 8.5em;
         font-size: 20px;
+        transform: translate(-40%, -100%);
     }
     button{
         position: relative;
@@ -161,14 +182,22 @@ span{
     }
 }
 
-@media screen and (max-width: 2031px) and (min-width: 600px){
-    .come{
+@media screen and (max-width: 2031px) and (min-width: 600px) {
+    .come {
         position: absolute;
-        transform: translate(-30%, 0);
+        transform: translate(-30%, -10%);
     }
-    button{
-        position: relative;
-        left: 78em;
-        top: 22em;
+    button {
+        right: 2%;
+        bottom: 2%;
+        font-size: 18px;
+    }
+    .dati{
+        position: absolute;
+        transform: translate(-100%, 0%);
+    }
+    .contattarci{
+        position: absolute;
+        transform: translate(0%, -100%);
     }
 }
