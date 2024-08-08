@@ -570,6 +570,7 @@ p{
     background: red;
     color: white;
     border-radius: 1em; 
+    display: block;
 }
 
 .offerta h3{
@@ -751,9 +752,8 @@ p{
         transform: translate(-50%, -50%);
     }
     .offerta{
-        visibility: collapse;
+        display: none;
     }
-
     .hidraulici {
         position: absolute;
         left: 50%;
@@ -1166,6 +1166,9 @@ p{
         height: 195%;
         margin: 0px;
         padding: 0px;
+    }
+    .offerta {
+        display: block;
     }
     .title{
         position: absolute;
