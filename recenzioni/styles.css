@@ -1,4 +1,4 @@
-body {
+body, html {
     font-family: Arial, sans-serif;
     background-color: #f7f9ff;
     background: linear-gradient(to right, #ffffff, #e1e5f3);
@@ -6,8 +6,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
 }
 
 .container {
@@ -98,7 +97,7 @@ button:hover {
     }
     .input-container {
         position: relative;
-        bottom: 7em;
+        bottom: -25em;
     }
     button {
         position: relative;
