@@ -679,11 +679,10 @@ p{
     }
     .home{
         position: absolute;
-        right: 10em;
+        right: 2em;
         top: 1.5em;
-        transform: translate(-210%, 0);
+        transform: translate(100%, 0);
         color: rgb(255, 0, 0);
-        width: 1.5em;
     }
     .menu{
         position: absolute;
@@ -927,11 +926,10 @@ p{
     }
     .home{
         position: absolute;
-        right: 10em;
+        right: 2em;
         top: 1.5em;
-        transform: translate(-210%, 0);
+        transform: translate(100%, 0);
         color: rgb(255, 0, 0);
-        width: 1.5em;
     }
     .menu{
         position: absolute;
@@ -1207,11 +1205,10 @@ p{
     }
     .home{
         position: absolute;
-        right: 10em;
+        right: 2em;
         top: 1.5em;
-        transform: translate(-210%, 0);
+        transform: translate(100%, 0);
         color: rgb(255, 0, 0);
-        width: 1.5em;
     }
     .menu{
         position: absolute;
