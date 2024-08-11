@@ -679,9 +679,9 @@ p{
     }
     .home{
         position: absolute;
-        right: 2em;
+        right: -2em;
         top: 1.5em;
-        transform: translate(100%, 0);
+        transform: translate(-100%, 0);
         color: rgb(255, 0, 0);
     }
     .menu{
@@ -926,9 +926,9 @@ p{
     }
     .home{
         position: absolute;
-        right: 2em;
+        right: 0;
         top: 1.5em;
-        transform: translate(100%, 0);
+        transform: translate(-100%, 0);
         color: rgb(255, 0, 0);
     }
     .menu{
@@ -1205,10 +1205,9 @@ p{
     }
     .home{
         position: absolute;
-        right: 2em;
+        right: 7em;
         top: 1.5em;
-        transform: translate(100%, 0);
-        color: rgb(255, 0, 0);
+        transform: translate(-100%, 0);
     }
     .menu{
         position: absolute;
