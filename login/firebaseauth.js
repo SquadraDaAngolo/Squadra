@@ -36,6 +36,7 @@
     const numero = document.getElementById('fNumero').value;
     const regione = document.getElementById('fRegione').value;
     const citta = document.getElementById('fCitta').value;
+    const paypal = document.getElementById('paypal-button-container-P-5N260480SF447990XM2KDDBY').value;
     const checkbox = document.getElementById('checkbox').value;
     const auth=getAuth();
     const db=getFirestore();
@@ -52,6 +53,7 @@
             servizi:servizi,
             citta:citta,
             regione:regione,
+            paypal:paypal,
             checkbox:checkbox
         };
         showMessage('Account creato con successo', 'signUpMessage');
