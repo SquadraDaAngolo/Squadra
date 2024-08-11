@@ -26,6 +26,11 @@ form{
     padding:1.3rem;
     margin-bottom:0.4rem;
 }
+.squadra{
+    height: 5em;
+    position: absolute;
+    top: 0em;
+}
 input{
     color:inherit;
     width:100%;
@@ -149,7 +154,6 @@ button:hover{
 .checkbox{
     position: absolute;
     right: 10em;
-    
 }
 
 .home{
@@ -159,7 +163,7 @@ button:hover{
 
 .hr{
     position: relative;
-    top: 3em;
+    top: 3.2em;
 }
 
 .ham-menu{
