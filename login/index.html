@@ -108,6 +108,29 @@
             <input type="password" id="rPassword"  placeholder="Password" required>
             <label for="rPassword">Password</label>
         </div>
+        <br>
+        <div id="paypal-button-container-P-5N260480SF447990XM2KDDBY"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AWDnh2CDPWYuK1UMWQiHxIvJ3R8HsTXMR0b7fvUfnmC22BhJHiQZOSZKrRK1IfCj6p6xrSzLx5n0dec7&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  /* Creates the subscription */
+                  plan_id: 'P-5N260480SF447990XM2KDDBY'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+              }
+          }).render('#paypal-button-container-P-5N260480SF447990XM2KDDBY'); // Renders the PayPal button
+        </script>
+<br>
         <input type="checkbox" class="checkbox" id="checkbox">
         <p style="font-size: 13px; position: relative; font-weight: 600; left: 35px;">acceta i termini e condizioni</p>
 <br>
