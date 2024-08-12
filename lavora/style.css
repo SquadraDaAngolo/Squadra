@@ -1,8 +1,12 @@
-body{
-    background-color: #ffffff;
-    background: linear-gradient(to right, #ffffff, #ffffff);
+body, html {
+    background-color: #f7f9ff;
+    background: linear-gradient(to right, #ffffff, #e1e5f3);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    max-width: 100%;
+    box-sizing: border-box;
 }
 
 
