@@ -1,6 +1,7 @@
 body{
     background-color: #ffffff;
     background:linear-gradient(to right,#ffffff,#ffffff);
+     overflow-x: hidden;
 }
 
 .footer{
