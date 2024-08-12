@@ -5,10 +5,9 @@ body, html {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     box-sizing: border-box;
 }
-
 
 * {
     box-sizing: inherit;
@@ -16,22 +15,23 @@ body, html {
     padding: 0;
 }
 
-h1, h2, p {
-    max-width: 100%;
-    overflow-wrap: break-word; /* Ensure text doesn't overflow */
+h1 {
+    text-align: center;
 }
 
 button {
     color: blueviolet;
     background-color: #c9d6ff;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     position: fixed;
-    right: 2%;
-    bottom: 2%;
+    right: 5%;
+    bottom: 5%;
+    padding: 10px;
+    font-size: 20px;
 }
 
 button:hover {
@@ -91,11 +91,10 @@ span {
 
 .come {
     position: absolute;
-    max-width: 90%; /* Ensure the width doesn't exceed the viewport */
+    max-width: 32em;
     font-size: 1.2em;
     font-family: sans-serif;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 60%;
     top: 11.5em;
 }
 
@@ -109,79 +108,82 @@ span {
 
 .dati {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 47em;
+    left: 6.3em;
+    transform: translate(-50%, 205%);
 }
 
 .benvenuto {
     font-size: 30px;
     font-family: sans-serif;
     font-weight: 500;
-    text-align: center; /* Center text */
-    max-width: 100%; /* Prevent overflow */
 }
 
 .nam {
     font-size: 30px;
 }
 
-span #loggedUserEmail {
+span #loggedUserEmail{
     max-width: 0.1em;
 }
 
-@media only screen and (max-width: 600px) {
-    body, html {
+@media only screen and (max-width: 600px){
+    body, html{
         height: 120%;
         width: 100%;
         margin: 0;
         padding: 0;
     }
-    .home {
+    .home{
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 5em;
+        transform: translate(50%, 0);
     }
-    .come {
+    .come{
         position: relative;
-        left: 0;
-        top: 7em;
+        left: 0em; 
+        top: 7em; 
         background-color: white;
-        padding: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
     }
-    .contattarci {
+    .contattarci{
         position: relative;
         top: 10em;
         left: 4em;
     }
-    .div1, .div2 {
+    .div1{
         position: relative;
         top: 2em;
         font-size: 20px;
     }
-    .dati {
+    .div2{
+        position: relative;
+        top: 2em;
+        font-size: 20px;
+    }
+    .dati{
         position: absolute;
-        left: 50%;
+        left: 3em;
         top: 8.5em;
         font-size: 20px;
-        transform: translateX(-50%);
+        transform: translate(-40%, -100%);
     }
-    button {
+    button{
         position: relative;
         top: 5em;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 15em;
     }
-    .benvenuto {
+    .benvenuto{
         font-size: 23px;
     }
-    .nam {
+    .nam{
         font-size: 23px;
     }
-    .come h3 {
+    .come h3{
         text-align: center;
     }
-    .come {
+    .come{
         background: rgb(204, 204, 204);
         text-align: start;
     }
@@ -190,21 +192,19 @@ span #loggedUserEmail {
 @media screen and (max-width: 2031px) and (min-width: 600px) {
     .come {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-30%, -10%);
     }
     button {
         right: 2%;
         bottom: 2%;
         font-size: 18px;
     }
-    .dati {
+    .dati{
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-100%, 0%);
     }
-    .contattarci {
+    .contattarci{
         position: absolute;
-        transform: translateY(-100%);
+        transform: translate(0%, -100%);
     }
 }
