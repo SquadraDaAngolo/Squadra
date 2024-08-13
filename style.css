@@ -1,8 +1,7 @@
 body{
     background-color: #ffffff;
-    background: linear-gradient(to right, #ffffff, #ffffff);
+    background:linear-gradient(to right,#ffffff,#ffffff);
     overflow-x: hidden;
-    max-width: 100%;
 }
 
 .footer{
@@ -674,7 +673,7 @@ p{
 
     html,body{
         width: 100%;
-        height: 209.5%;
+        height: 195.3%;
         margin: 0px;
         padding: 0px;
         overflow-x: hidden; 
@@ -701,10 +700,10 @@ p{
     }
     .ham-menu{
         position: absolute;
-        right: 0em;
+        right: 20em;
         top: 2em;
         width: 2em;
-        transform: translate(-100%, 0);
+        transform: translate(-90%, 0);
     }
     .squadra{
         width: 5em;
@@ -912,9 +911,9 @@ p{
     .f1{
         position: absolute;
         top: 232em;
-        transform: translate(0em, 0);
-        padding-left: 5.2em;
-        padding-right: 5.2em;
+        transform: translate(0%, 0);
+        padding-left: 7.29em;
+        padding-right: 7.29em;
     }
 }
 
