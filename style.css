@@ -4,9 +4,16 @@ body{
     overflow-x: hidden;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 5em;
+    background-color: #424242;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    position: absolute;
+    top: 0%;
+    left: 0;
 }
 
 h2{
@@ -40,7 +47,7 @@ p{
 .ham-menu div {
     height: 5px;
     width: 40px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
     position: absolute;
     left: 0;
@@ -251,7 +258,7 @@ p{
     position: relative;
     left: 78%;
     top: 0.1em;
-    color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -395,19 +402,20 @@ p{
 }
 
 .f1{
-    background-color: #333;
+    background-color: #424242;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
     position: relative;
     top: 105em;
+    width: 100%;
 }
 
 .hidraulici{
     width: 50%;
     height: 20em;
-    background: #333;
+    background: #424242;
     position: relative;
     top: 52em;
     border-radius: 5em;
@@ -432,7 +440,7 @@ p{
 .elettrici{
     width: 50%;
     height: 20em;
-    background: #333;
+    background: #424242;
     position: relative;
     top: 58em;
     left: 59em;
@@ -458,7 +466,7 @@ p{
 .pittura{
     width: 50%;
     height: 20em;
-    background: #333;
+    background: #424242;
     position: relative;
     top: 63em;
     border-radius: 5em;
@@ -483,7 +491,7 @@ p{
 .traslochi{
     width: 50%;
     height: 20em;
-    background: #333;
+    background: #424242;
     position: relative;
     top: 68em;
     left: 59em;
@@ -507,10 +515,10 @@ p{
 }
 
 .squadra{
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
     position: absolute;
-    left: 2em;
+    left: 0em;
     top: 0em;
 }
 
@@ -570,7 +578,7 @@ p{
     max-width: 25em;
     text-align: center;
     position: relative;
-    top: 39.5em;
+    top: 45.5em;
     left: 46em;
     background: red;
     color: white;
@@ -709,7 +717,6 @@ p{
         width: 5em;
         height: 5em;
         position: absolute;
-        top: 0.5em;
     }
     .img1 {
         position: absolute;
@@ -956,7 +963,6 @@ p{
         width: 5em;
         height: 5em;
         position: absolute;
-        top: 0.5em;
     }
     .img1 {
         position: absolute;
