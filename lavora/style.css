@@ -1,11 +1,10 @@
 body, html {
     background-color: #f7f9ff;
     background: linear-gradient(to right, #ffffff, #e1e5f3);
-    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
     box-sizing: border-box;
 }
 
@@ -22,16 +21,14 @@ h1 {
 button {
     color: blueviolet;
     background-color: #c9d6ff;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: bold;
     border: none;
     position: fixed;
-    right: 5%;
-    bottom: 5%;
-    padding: 10px;
-    font-size: 20px;
+    right: 2%; /* Adjusted to avoid overflow */
+    bottom: 2%; /* Adjusted to avoid overflow */
 }
 
 button:hover {
@@ -60,13 +57,19 @@ span {
     color: black;
 }
 
-.squadra {
-    width: 5em;
-    height: 5em;
+.img {
+    width: 10em;
+    height: 10em;
+    border-radius: 50em;
     transition: 0.5s;
     position: relative;
-    top: 0em;
-    left: 1em;
+    top: 3em;
+    left: 50%; /* Centering adjustment */
+    transform: translateX(-50%); /* Centering adjustment */
+}
+
+.img:hover {
+    transform: scale(1.2);
 }
 
 .file {
@@ -84,28 +87,32 @@ span {
     font-weight: 600;
 }
 
-
 .come {
-    position: relative; /* Avoids absolute positioning unless necessary */
-    max-width: 90%; /* Ensures it doesn't exceed viewport width */
-    margin: 0 auto; /* Centers the element */
-    padding: 1em;
+    position: relative; /* Changed from absolute */
+    max-width: 90%; /* Prevents overflow */
     font-size: 1.2em;
     font-family: sans-serif;
+    margin: 0 auto; /* Centers the element */
+    padding: 1em;
+    left: 0; /* Remove absolute positioning */
+    top: 7em; /* Adjust for positioning */
+    background-color: white; /* Mobile styling */
 }
 
 .contattarci {
     font-family: sans-serif;
-    position: absolute;
-    top: 42em;
-    left: 5em;
+    position: relative; /* Changed from absolute */
+    top: 10em;
+    left: 4em;
     font-size: 1.1em;
 }
 
 .dati {
-    position: absolute;
-    left: 6.3em;
-    transform: translate(-50%, 205%);
+    position: relative; /* Changed from absolute */
+    left: 50%; /* Centering adjustment */
+    transform: translateX(-50%); /* Centering adjustment */
+    top: 8.5em;
+    font-size: 20px;
 }
 
 .benvenuto {
@@ -118,68 +125,59 @@ span {
     font-size: 30px;
 }
 
-span #loggedUserEmail{
+span #loggedUserEmail {
     max-width: 0.1em;
 }
 
-@media only screen and (max-width: 600px){
-    body, html{
-        height: 120%;
+@media only screen and (max-width: 600px) {
+    body, html {
+        height: auto; /* Removed fixed height */
         width: 100%;
         margin: 0;
         padding: 0;
     }
-    .home{
-        position: absolute;
-        left: 5em;
-        transform: translate(50%, 0);
-    }
-    .come{
+    .home {
         position: relative;
-        left: 0em; 
-        top: 7em; 
+        left: 50%; /* Centered for mobile */
+        transform: translateX(-50%); /* Centered for mobile */
+    }
+    .come {
+        top: 7em;
         background-color: white;
         padding-left: 1em;
         padding-right: 1em;
         padding-bottom: 1em;
+        max-width: 90%; /* Prevents overflow */
+        margin: 0 auto; /* Centers for mobile */
     }
-    .contattarci{
-        position: relative;
+    .contattarci {
         top: 10em;
-        left: 4em;
+        left: 50%; /* Centered for mobile */
+        transform: translateX(-50%); /* Centered for mobile */
     }
-    .div1{
-        position: relative;
+    .div1, .div2 {
         top: 2em;
         font-size: 20px;
+        margin-left: 5%; /* Keep within viewport */
     }
-    .div2{
-        position: relative;
-        top: 2em;
-        font-size: 20px;
-    }
-    .dati{
-        position: absolute;
-        left: 3em;
+    .dati {
+        left: 50%; /* Centered for mobile */
+        transform: translateX(-50%); /* Centered for mobile */
         top: 8.5em;
         font-size: 20px;
-        transform: translate(-40%, -100%);
     }
-    button{
-        position: relative;
+    button {
         top: 5em;
-        left: 15em;
+        left: 50%; /* Centered for mobile */
+        transform: translateX(-50%); /* Centered for mobile */
     }
-    .benvenuto{
+    .benvenuto, .nam {
         font-size: 23px;
     }
-    .nam{
-        font-size: 23px;
-    }
-    .come h3{
+    .come h3 {
         text-align: center;
     }
-    .come{
+    .come {
         background: rgb(204, 204, 204);
         text-align: start;
     }
@@ -187,20 +185,20 @@ span #loggedUserEmail{
 
 @media screen and (max-width: 2031px) and (min-width: 600px) {
     .come {
-        position: absolute;
-        transform: translate(-30%, -10%);
+        position: relative; /* Changed from absolute */
+        max-width: 90%; /* Prevents overflow */
+        margin: 0 auto; /* Centers the element */
     }
     button {
-        right: 2%;
-        bottom: 2%;
+        right: 2%; /* Prevents overflow */
+        bottom: 2%; /* Prevents overflow */
         font-size: 18px;
     }
-    .dati{
-        position: absolute;
-        transform: translate(-100%, 0%);
+    .dati {
+        left: 50%; /* Centered adjustment */
+        transform: translateX(-50%); /* Centered adjustment */
     }
-    .contattarci{
-        position: absolute;
-        transform: translate(0%, -100%);
+    .contattarci {
+        transform: translateX(-50%); /* Centers adjustment */
     }
 }
