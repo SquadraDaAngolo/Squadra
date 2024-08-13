@@ -917,6 +917,9 @@ p{
     .f1{
         position: absolute;
         top: 232em;
+        left: 0%;
+        width: 100%;
+        transform: translate(0%, 0);
     }
 }
 
