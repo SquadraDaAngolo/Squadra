@@ -140,7 +140,7 @@ span #loggedUserEmail{
     }
     .come{
         position: relative;
-        left: 10em; 
+        left: 0em; 
         top: 7em; 
         background-color: white;
         padding-left: 1em;
