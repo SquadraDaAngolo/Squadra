@@ -180,7 +180,4 @@ button:hover{
     #signup{
         width: 25em;
     }
-    .checkbox{
-        transform: translate(5%, 0);
-    }
 }
