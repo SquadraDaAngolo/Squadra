@@ -60,18 +60,13 @@ span {
     color: black;
 }
 
-.img {
-    width: 10em;
-    height: 10em;
-    border-radius: 50em;
+.squadra {
+    width: 5em;
+    height: 5em;
     transition: 0.5s;
     position: relative;
-    top: 3em;
-    left: 8em;
-}
-
-.img:hover {
-    transform: scale(1.2);
+    top: 0em;
+    left: 1em;
 }
 
 .file {
@@ -89,13 +84,14 @@ span {
     font-weight: 600;
 }
 
+
 .come {
-    position: absolute;
-    max-width: 32em;
+    position: relative; /* Avoids absolute positioning unless necessary */
+    max-width: 90%; /* Ensures it doesn't exceed viewport width */
+    margin: 0 auto; /* Centers the element */
+    padding: 1em;
     font-size: 1.2em;
     font-family: sans-serif;
-    left: 60%;
-    top: 11.5em;
 }
 
 .contattarci {
