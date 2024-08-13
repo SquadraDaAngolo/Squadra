@@ -180,4 +180,8 @@ button:hover{
     #signup{
         width: 25em;
     }
+    .checkbox{
+        position: absolute;
+        right: 0em;
+    }
 }
