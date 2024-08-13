@@ -8,6 +8,7 @@ body, html {
     overflow-x: hidden; /* Prevent horizontal scrolling */
     font-family: 'Lato', sans-serif; /* Clean, modern font */
     color: #333; /* Dark gray for better readability */
+    position: relative;
 }
 
 /* General Reset */
@@ -28,12 +29,14 @@ h1 {
 
 h2 {
     font-family: 'Montserrat', sans-serif;
+    position: relative;
     font-size: 1.5rem;
+    font-weight: 700;
     color: #4a4a4a;
-    margin-bottom: 0.5em;
-    margin-left: 3.5em;
+    top: 1em;
+    padding-bottom: 1em;
+    left: 0em;
     text-align: left;
-    
 }
 
 .squadra{
@@ -62,7 +65,7 @@ button {
 .parent-container {
     position: relative;
     width: 95%;
-    height: 5em; /* Example: full height of the viewport */
+    height: 4em; /* Example: full height of the viewport */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -82,7 +85,6 @@ button:hover {
     font-family: 'Lato', sans-serif;
     color: #444;
     position: relative;
-    left: 5em;
 }
 
 div {
@@ -92,8 +94,8 @@ div {
 
 span {
     font-weight: 600;
-    font-size: 1.4rem;
-    color: #4a4a4a;
+    font-size: 1rem;
+    color: #444;
 }
 
 /* Image Styling */
@@ -148,7 +150,6 @@ span {
 
 .contattarci {
     font-family: 'Lato', sans-serif;
-    margin: 2em 5%;
     font-size: 1.1em;
     background-color: #ffffff;
     padding: 1.5em;
@@ -163,7 +164,7 @@ span {
     font-weight: 600;
     color: #4a4a4a;
     text-align: center;
-    margin-top: 0.5em;
+    margin-top: 2.5em;
 }
 
 .nam {
@@ -223,6 +224,11 @@ span {
 @media screen and (min-width: 600px) and (max-width: 1024px) {
     body, html {
         height: 100%;
+    }
+
+    .div1, .div2{
+        position: relative;
+        left: 0em;
     }
 
     .come {
