@@ -36,6 +36,11 @@ h2 {
     
 }
 
+.squadra{
+    width: 5em;
+    height: 5em;
+}
+
 /* Button Styles */
 button {
     color: #fff;
@@ -45,12 +50,24 @@ button {
     font-size: 1.1rem;
     font-weight: bold;
     border: none;
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
+    position: relative;
+    margin-left: auto;
+    margin-top: auto;
+    display: block;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: background-color 0.3s, box-shadow 0.3s;
 }
+
+/* Ensure the parent container is relatively positioned and has size constraints */
+.parent-container {
+    position: relative;
+    width: 95%;
+    height: 5em; /* Example: full height of the viewport */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 
 button:hover {
     background-color: #574b90;
@@ -146,7 +163,7 @@ span {
     font-weight: 600;
     color: #4a4a4a;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .nam {
