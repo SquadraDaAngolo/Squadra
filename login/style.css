@@ -15,7 +15,8 @@ body{
     margin:50px auto;
     border-radius:10px;
     box-shadow:0 20px 35px rgba(0,0,1,0.9);
-    margin-top: 10em;
+    position: relative;
+    top: 5em;
 }
 form{
     margin:0 2rem;
@@ -178,5 +179,8 @@ button:hover{
     }
     #signup{
         width: 25em;
+    }
+    .checkbox{
+        transform: translate(5%, 0);
     }
 }
