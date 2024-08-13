@@ -182,6 +182,6 @@ button:hover{
     }
     .checkbox{
         position: absolute;
-        right: 0em;
+        right: 10em;
     }
 }
