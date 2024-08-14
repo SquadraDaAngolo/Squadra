@@ -1,6 +1,6 @@
 body, html {
-    background-color: #f7f9ff;
-    background: linear-gradient(to right, #dbe4ff, #f0f5ff);
+    background-color: #ffffff;
+    background: linear-gradient(to right, #eff3ff, #fafcff);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,7 +47,7 @@ h2 {
 /* Button Styles */
 button {
     color: #fff;
-    background-color: #6c63ff; /* Modern purple shade */
+    background-color: #ff0000; /* Modern purple shade */
     padding: 12px 20px;
     border-radius: 8px;
     font-size: 1.1rem;
@@ -94,7 +94,7 @@ div {
 
 span {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #444;
 }
 
@@ -155,6 +155,9 @@ span {
     padding: 1.5em;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 20em;
+    position: relative;
+    left: 5em;
 }
 
 /* Welcome Section */
