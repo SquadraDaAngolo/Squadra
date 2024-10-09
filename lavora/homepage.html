@@ -57,11 +57,61 @@
         <p><b>Email:</b> <a href="mailto:squadradangolo@gmail.com">squadradangolo@gmail.com</a></p>
         <p><b>Numero di telefono:</b> <a href="tel:3514140748">3514140748</a></p>
     </div>
+    <!-- Existing layout for uploading profile picture -->
+    <div class="layout">
+        <input 
+        type="file" 
+        class="inputFile" 
+        id="fileInp" 
+        onchange="getFile(event)" 
+        accept="image/png, image/jpeg">
+        <label for="fileInp">+</label>
+        <span class="fileText"></span>
+        <button onclick="uploadImage()" class="butt">UPLOAD IMAGE</button>
+        <div class="bar">
+            <div class="progress"></div>
+        </div>
+        <div class="uploadPercentage">0%</div>
+
+        <div class="imageUploaded">
+            <img alt="" class="img">
+        </div>
+    </div>
+
+    <textarea id="userDescription" placeholder="Racconta qualcosa su di te" rows="5" cols="50" class="userDescription"></textarea>
+    <button onclick="uploadText()" class="upload">UPLOAD TESTO</button>
 
     <div class="parent-container">
-        <a href="/index.html" style="text-decoration: none;"><button id="logout">elimina l'account</button></a>
+        <a href="/index.html" style="text-decoration: none;"><button id="logout" class="log1">elimina l'account</button></a>
+    </div>
+    <button onclick="saveData()" class="butto"></button>
+
+    <div class="container">
+        <h3 class="u1">Upload Your Work Images</h3>
+        <input type="file" id="workImagesInput" multiple accept="image/*" class="inputImg">
+        <button id="uploadImagesButton" class="upload1">Upload Images</button>
+        <div id="uploadStatus" class="Us"></div>
+    
+        <div class="work-image-container">
+            <!-- This container will hold the images in a horizontal row -->
         </div>
+    
+        <div class="work-image-sidebar">
+            <!-- This sidebar will hold thumbnails or smaller versions of the images -->
+        </div>
+    </div>
+    
+
+<!-- Horizontal Scrollable Work Images Sidebar -->
+<div class="work-image-sidebar">
+    <div class="work-image-container">
+        <!-- Work images will be dynamically inserted here -->
+    </div>
+</div>  
+
 
     <script src="/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
