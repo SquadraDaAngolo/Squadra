@@ -14,7 +14,7 @@
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: 0.30s;
+    transition: 0.30s;  
 }
 
 #usersList div:hover{
@@ -67,4 +67,82 @@
         left: 0em;
         top: 0.5em;
     }
+}
+
+/* Modal styling */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+.modal-content {
+    position: absolute;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 97.8%;
+    height: 85.8%;
+    max-width: 100%;
+    top: -13em;
+}
+
+
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Worker details container */
+#workerDetails {
+    margin-bottom: 20px; /* Space between worker details and images */
+}
+
+/* Work images container */
+#workImagesContainer {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 60%; /* Full width within the modal-content */
+    position: relative;
+    left: 0%;
+    top: 18em;
+}
+
+/* Images in work images container */
+#workImagesContainer img {
+    height: 140px;
+    width: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+#workImagesContainer img:hover {
+    transform: scale(1.1);
 }
