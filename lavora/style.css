@@ -45,7 +45,7 @@ h2 {
 }
 
 /* Button Styles */
-button {
+.log1 {
     color: #fff;
     background-color: #ff0000; /* Modern purple shade */
     padding: 12px 20px;
@@ -59,6 +59,7 @@ button {
     display: block;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: background-color 0.3s, box-shadow 0.3s;
+    top: 14.5em;
 }
 
 /* Ensure the parent container is relatively positioned and has size constraints */
@@ -98,24 +99,6 @@ span {
     color: #444;
 }
 
-/* Image Styling */
-.img {
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    transition: transform 0.5s, box-shadow 0.5s;
-    position: relative;
-    top: 3em;
-    left: 50%; /* Center image horizontally */
-    transform: translateX(-50%);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
 /* Hidden File Input */
 .file {
     display: none;
@@ -137,9 +120,12 @@ span {
 
 /* Section Styling */
 .come {
+    position: relative;
+    left: 15em;
+    bottom: 15em;
     margin: 2em auto;
     padding: 1.5em;
-    max-width: 90%;
+    max-width: 30%;
     background-color: #ffffff;
     font-size: 1.2em;
     font-family: 'Lato', sans-serif;
@@ -149,6 +135,9 @@ span {
 }
 
 .contattarci {
+    position: relative;
+    left: 40%;
+    top: 25em;
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
     background-color: #ffffff;
@@ -157,7 +146,6 @@ span {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 20em;
     position: relative;
-    left: 5em;
 }
 
 /* Welcome Section */
@@ -204,7 +192,7 @@ span {
         height: 8em;
     }
 
-    button {
+    .logout {
         right: 5%;
         bottom: 5%;
         font-size: 1rem;
@@ -251,4 +239,226 @@ span {
     body, html {
         height: 100%;
     }
+}
+
+/* Upload Image Section Styling */
+#photoPreview {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin-top: 10px;
+}
+
+.inputFile {
+    display: none;
+}
+
+label {
+    position: absolute;
+    left: 0.3em;
+    top: 13em;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.butt {
+    position: absolute;
+    left: 8.5em;
+    top: 52em;  
+    padding: 15px 20px;
+    background: cornflowerblue;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.bar {
+    position: absolute;
+    left: 1em;
+    top: 45em;
+    height: 40px;
+    width: 400px;
+    background-color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #ff0000;
+    height: 100%;
+    width: 0%;
+}
+
+.uploadPercentage {
+    font-size: 23px;
+    position: relative;
+    left: 19em;
+    top: -9em;
+}
+
+.img {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    left: 8.1em;
+    top: 35em;
+}
+
+.imgUploaded {
+    margin-top: 10px;
+}
+
+.userDescription {
+    position: relative;
+    left: 70em;
+    bottom: 25em;
+}
+
+.upload1 {
+    position: relative;
+    right: 73em;
+    bottom: -8em;
+    color: #fff;
+    background-color: #4c4d4e;
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    margin-left: auto;
+    margin-top: auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.upload{
+    position: relative;
+    left: 54em;
+    bottom: 19.5em;
+    color: #fff;
+    background-color: #4c4d4e;
+    padding: 10px 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.u1 {
+    position: relative;
+    left: 9em;
+    bottom: 17em;
+}
+
+.inputImg{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 7em;
+    right: 46em;
+}
+
+.Us {
+    position: relative;
+    left: -45em;
+    bottom: -9em;
+}
+
+.fileText{
+    display: none;
+}
+
+
+/* Main container to center content, limit width, and allow for positioning */
+.container {
+    width: 50%; /* Set width to 50% of the page */
+    margin: 0 auto; /* Center container on the page */
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Enables positioning with top, left, etc. */
+    /* Adjust the positioning as needed */
+    bottom: 15em;
+    left: -5em;
+}
+
+/* Main container for images */
+.work-image-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 100%; /* Full width within the 50% container */
+}
+
+.work-image-container img {
+    height: 140px;
+    width: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.work-image-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Horizontal sidebar container */
+.work-image-sidebar {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 100%; /* Full width within the 50% container */
+}
+
+.work-image-sidebar img {
+    height: 100px;
+    width: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.work-image-sidebar img:hover {
+    transform: scale(1.05);
+}
+
+
+.img-container {
+    position: relative;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkred;
 }
