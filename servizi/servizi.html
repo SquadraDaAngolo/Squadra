@@ -6,7 +6,7 @@
     <title>Servizi</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="/login/homepage.js"></script>
+    <!-- Remove index.js and homepage.js as they are not needed here -->
     <script type="module" src="servizi.js"></script>
 </head>
 <body>
@@ -27,12 +27,30 @@
             </ul>
         </div>
         <a href="/index.html" class="home">Home</a>
-        
         <img src="/squadra.jpg" alt="" class="squadra">
     </div>
     <br><br><br><br>
-    <div id="usersList"></div>
 
+    <div id="usersList" class="users-list">
+        <!-- User details will be appended here by servizi.js -->
+    </div>
+
+    <div id="workerModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalButton" class="close">&times;</span>
+            
+            <div id="workerDetails">
+                <!-- Worker details and images will be shown here -->
+            </div>
+            
+            <div id="workImagesContainer">
+                <!-- Work images will be displayed here -->
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="modal.js"></script>
     <script src="/script.js"></script>
 </body>
 </html>
