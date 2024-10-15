@@ -163,84 +163,6 @@ span {
     color: #333; /* Match the button color */
 }
 
-/* Responsive Adjustments */
-@media only screen and (max-width: 600px) {
-    body, html {
-        height: 100%;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .div1, .div2, .dati, .contattarci, .come {
-        font-size: 1rem;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .benvenuto, .nam {
-        font-size: 2rem;
-    }
-
-    .img {
-        width: 8em;
-        height: 8em;
-    }
-
-    .logout {
-        right: 5%;
-        bottom: 5%;
-        font-size: 1rem;
-    }
-
-    .come {
-        padding: 1em;
-        font-size: 1em;
-    }
-
-    .contattarci {
-        font-size: 1em;
-    }
-
-    .dati {
-        font-size: 1em;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-    body, html {
-        height: 100%;
-    }
-
-    .div1, .div2{
-        position: relative;
-        left: 0em;
-    }
-
-    .come {
-        max-width: 80%;
-    }
-
-    .contattarci, .dati {
-        font-size: 1.1em;
-    }
-
-    .benvenuto {
-        font-size: 2.2rem;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1742px){
-    body, html {
-        height: 100%;
-    }
-}
-
 /* Upload Image Section Styling */
 #photoPreview {
     max-width: 300px;
@@ -400,8 +322,7 @@ label {
     overflow-x: auto;
     padding: 10px;
     gap: 10px;
-    border-bottom: 1px solid #ccc;
-    background-color: #f9f9f9;
+    
     width: 100%; /* Full width within the 50% container */
 }
 
@@ -424,8 +345,7 @@ label {
     overflow-x: auto;
     padding: 10px;
     gap: 10px;
-    border-top: 1px solid #ccc;
-    background-color: #f1f1f1;
+    
     width: 100%; /* Full width within the 50% container */
 }
 
@@ -461,4 +381,223 @@ label {
 
 .delete-button:hover {
     background-color: darkred;
+}
+
+@media only screen and (max-width: 600px) {
+    body, html {
+        height: 170%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .div1, .div2, .dati, .contattarci, .come {
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .benvenuto, .nam {
+        font-size: 2rem;
+    }
+
+    .img {
+        width: 8em;
+        height: 8em;
+    }
+
+    .logout {
+        right: 5%;
+        bottom: 5%;
+        font-size: 1rem;
+    }
+
+    .come {
+        padding: 1em;
+        font-size: 1em;
+        top: 1em;
+        max-width: 30em;
+        left: 0em;
+    }
+
+    .contattarci {
+        font-size: 1em;
+    }
+
+    .dati {
+        font-size: 1em;
+    }
+
+    .butt{
+        top: 70em;
+    }
+
+    .bar{
+        top: 62em;
+    }
+    .img{
+        top: 52em;
+    }
+    label{
+        top: 17.5em;
+    }
+    
+    .log1{
+        top: 65em;
+    }
+    .contattarci{
+        top: 80em;
+        left: 3em;
+    }
+    .uploadPercentage{
+        top: 9em;
+    }
+    .upload{
+        left: 13.5em;
+        top: 20em;
+    }
+    .userDescription{
+        left: 3em;
+        top: 25em;
+    }
+    .upload1{
+        left: -4.5em;
+        bottom: 4em;
+    }
+    .inputImg{
+        left: -1em;
+        top: -5em;
+    }
+    .container{
+        top: 30em;
+    }
+    .work-image-sidebar{
+        position: relative;
+        left: -2em;
+        width: 200%
+        
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    body, html {
+        height: 155%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .div1, .div2, .dati, .contattarci, .come {
+        font-size: 1rem;    
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .benvenuto, .nam {
+        font-size: 2rem;
+    }
+
+    .img {
+        width: 8em;
+        height: 8em;
+    }
+
+    .logout {
+        right: 5%;
+        bottom: 5%;
+        font-size: 1rem;
+    }
+
+    .come {
+        padding: 1em;
+        font-size: 1em;
+        top: -15em;
+        max-width: 20em;
+        left: 25em;
+    }
+
+    .contattarci {
+        font-size: 1em;
+    }
+
+    .dati {
+        font-size: 1em;
+    }
+
+    .butt{
+        top: 52em;
+    }
+
+    .bar{
+        top: 45em;
+    }
+    .img{
+        top: 35em;
+    }
+    label{
+        top: 12.8em;
+    }
+    
+    .log1{
+        top: 45em;
+    }
+    .contattarci{
+        top: 62em;
+        left: 5em;
+    }
+    .uploadPercentage{
+        top: -4em;
+    }
+    .upload{
+        left: -8em;
+        top: 6.5em;
+    }
+    .userDescription{
+        left: 3em;
+        top: 5em;
+    }
+    .upload1{
+        left: -22em;
+        bottom: 20em;
+    }
+    .inputImg{
+        left: -10em;
+        top: -23em;
+    }
+    .container{
+        top: 30em;
+    }
+    .work-image-sidebar{
+        position: relative;
+        left: -7em;
+        top: -18em;
+        width: 180%
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1742px){
+    body, html {
+        height: 100%;
+    }
+    .inputImg{
+        left: -20em;
+        top: 0em;
+    }
+    .userDescription{
+        left: 50%;
+    }
+    .upload{
+        left: 35%;
+        top: -17em;
+    }
 }
