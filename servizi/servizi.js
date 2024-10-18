@@ -68,7 +68,7 @@ async function openModal(workerId) {
             <strong style="font-size: 22px;">Città:</strong> <span style="font-size: 22px;">${citta}</span> <br>
             <strong style="font-size: 22px;">Servizi:</strong> <span style="font-size: 22px;">${servizi}</span> <br>
             <strong style="font-size: 22px;">Descrizione:</strong> <span style="font-size: 22px;">${description || 'Nessuna descrizione disponibile'}</span> <br>
-            <img src="${photoURL}" alt="Foto Utente" style="max-width: 200px; border-radius: 50%; position: relative; left: 25em; bottom: 6em"> <br>
+            <img src="${photoURL}" alt="Foto Utente" class="worker-photo"> <br>
         `;
 
         // Clear any previous images
