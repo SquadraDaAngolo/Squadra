@@ -45,30 +45,6 @@
     transition: 0.3s;
 }
 
-@media only screen and (max-width: 1200px) {
-    #usersList {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    #usersList {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #usersList {
-        grid-template-columns: 1fr; /* 1 column */
-    }
-
-    .chiama {
-        position: relative;
-        left: 0em;
-        top: 0.5em;
-    }
-}
-
 /* Modal styling */
 .modal {
     display: none; 
@@ -131,7 +107,7 @@
     width: 60%; /* Full width within the modal-content */
     position: relative;
     left: 0%;
-    top: 18em;
+    top: 10em;
 }
 
 /* Images in work images container */
@@ -145,4 +121,110 @@
 
 #workImagesContainer img:hover {
     transform: scale(1.1);
+}
+
+.workImages{
+    left: 100em;
+}
+
+.worker-photo {
+    max-width: 200px;
+    border-radius: 50%;
+    position: relative;
+    left: 25em;
+    bottom: 6em;
+}
+
+@media only screen and (max-width: 1200px) {
+    #usersList {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+    .modal-content {
+        position: relative;
+        margin: 0% auto;
+        top: 5em; 
+    }
+
+    .modal {
+        top: 0em;
+    }
+
+    #workImagesContainer{
+        top: 10em;
+        width: 58em;
+    }
+
+    .chiama {
+        position: relative;
+        left: 0em;
+        top: 0.5em;
+    }
+
+    .worker-photo{
+        top: -5em;
+        left: 30em;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #usersList {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+    .modal-content {
+        position: relative;
+        margin: 0% auto;
+        top: 5em; 
+    }
+
+    .modal {
+        top: 0em;
+    }
+
+    #workImagesContainer{
+        top: 10em;
+        width: 48em;
+    }
+
+    .chiama {
+        position: relative;
+        left: 0em;
+        top: 0.5em;
+    }
+
+    .worker-photo{
+        top: -5em;
+        left: 30em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #usersList {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+
+    .modal-content {
+        position: relative;
+        margin: 0% auto;
+        top: 5em; 
+    }
+
+    .modal {
+        top: 0em;
+    }
+
+    #workImagesContainer{
+        top: 10em;
+        width: 22em;
+    }
+
+    .chiama {
+        position: relative;
+        left: 0em;
+        top: 0.5em;
+    }
+
+    .worker-photo{
+        top: 2em;
+        left: 0em;
+    }
 }
