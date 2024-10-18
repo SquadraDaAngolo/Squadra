@@ -135,6 +135,34 @@
     bottom: 6em;
 }
 
+@media only screen and (max-width: 1743px) and (min-width: 1200px){
+        .modal-content {
+        position: relative;
+        margin: 0% auto;
+        top: 5em; 
+    }
+
+    .modal {
+        top: 0em;
+    }
+
+    #workImagesContainer{
+        top: 0em;
+        width: 58em;
+    }
+
+    .chiama {
+        position: relative;
+        left: 0em;
+        top: 0.5em;
+    }
+
+    .worker-photo{
+        top: -5em;
+        left: 30em;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     #usersList {
         grid-template-columns: repeat(3, 1fr); /* 3 columns */
