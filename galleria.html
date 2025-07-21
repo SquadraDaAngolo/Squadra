@@ -1,227 +1,72 @@
-form {
-    background-color: #7f897b2d;
-    padding: 25px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 3em;
-    margin-top:5em;
-    position: relative;
-    left: 30em;
-}
-form h2 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #476842;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="offerte.css">
+    <link rel="stylesheet" href="galleria.css">
+    <link rel="icon" href="/photos/squadra.webp" type="image/png">
+</head>
+<body>
+    <header>
+    <a href="inner.html">
+  <div class="logo">
+    <img src="photos/squadra.webp" alt="Logo" class="imgLogo" loading="lazy">
+  </div>
+</a>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/lavoro.html">Lavora</a>
+      <a href="/galleria.html">Galleria</a>
+      <a href="/contatti.html">Contatti</a>
+      <a href="tel:+393792734599" class="number">+39 379 273 4599</a>
+    </nav>
+  </header>
 
-form:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.2);
-}
+<div class="mobile-nav-toggle" id="mobileToggle">&#9776;</div>
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
+<nav class="mobile-nav" id="mobileNav">
+  <a href="/index.html">Home</a>
+  <a href="/lavoro.html">Lavora</a>
+  <a href="/galleria.html">Galleria</a>
+  <a href="/contatti.html">Contatti</a>
+  <a href="tel:+393792734599" class="number">+39 379 273 4599</a>
+</nav>
 
-input, textarea {
-    width: 90%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: #F1F7ED;
-    color: #333;
-}
 
-button {
-  background-color: #7CA982;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  width: 100%;
-  font-size: 16px;
-}
+    <div class="Head22">
+    <h1 class="text1">La nostra galleria</h1>
+  </div>
 
-.success, .error {
-    text-align: center;
-    margin-top: 10px;
-}
+  <div class="photo-grid">
+  <img src="galleria/parcoGiochi.webp" alt="Gallery image 1" loading="lazy" width="300" height="200">
+  <img src="galleria/WhatsApp Image 2025-07-04 at 14.16.39_327107cb.webp" alt="Gallery image 2" loading="lazy" width="300" height="200">
+  <img src="galleria/WhatsApp Image 2025-07-04 at 14.16.40_9ba944e4.webp" alt="Gallery image 3" loading="lazy" width="300" height="200">
+  <img src="galleria/WhatsApp Image 2025-07-04 at 14.16.41_03e3070c.webp" alt="Gallery image 4" loading="lazy" width="300" height="200">
+  <img src="galleria/WhatsApp Image 2025-07-04 at 14.16.41_61f302e9.webp" alt="Gallery image 5" loading="lazy" width="300" height="200">
+  <img src="galleria/WhatsApp Image 2025-07-04 at 14.16.41_8ed872b6.webp" alt="Gallery image 6" loading="lazy" width="300" height="200">
+  <img src="galleria/WhatsApp Image 2025-07-04 at 14.19.30_7b6b2143.webp" alt="Gallery image 7" loading="lazy" width="300" height="200">
+  <img src="photos/photo8.webp" alt="Gallery image 8" loading="lazy" width="300" height="200">
+</div>
+<br><br><br>
 
-.success {
-    color: green;
-}
+  <footer class="split-footer">
+    <div class="footer-logo">
+      <img src="photos/squadra.webp" alt="Squadra Logo" />
+    </div>
+    <div class="footer-text">
+      <p><strong>Cosa offriamo?</strong><br>
+        - Servizi di traslochi<br>
+        - Servizi di montaggi direttamente a casa tua</p>
+      <p><strong>Contatto:</strong><br>
+        <a href="tel:+393792734599">+39 379 273 4599</a><br>
+         <a href="https://wa.me/393792734599" target="_blank">WhatsApp</a> <br>
+        <a href="mailto:squadradangolo@gmail.com">squadradangolo@gmail.com</a></p>
+    </div>
+  </footer>
 
-.error {
-    color: red;
-}
-
-  .side-text {
-    width: 25%;
-    background: #7f897b2d;
-    padding: 20px;
-    border-radius: 3em;
-    color: #333;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    font-size: 0.95rem;
-    line-height: 1.4;
-    position: relative;
-    bottom: 40em;
-    left: 10em;
-    transition: 0.5s ease;
-  }
-
-  .side-text:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.2);
-    transition: 0.5s ease;
-  }
-
-  .side-text h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #476842;
-  }
-
-  .side-text ul {
-    padding-left: 1em;
-  }
-
-  .side-text li {
-    margin-bottom: 8px;
-  }
-
-  .side-text2{
-    width: 25%;
-    background: #7f897b2d;
-    padding: 20px;
-    border-radius: 3em;
-    color: #333;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    font-size: 0.95rem;
-    line-height: 1.4;
-    position: relative;
-    bottom: 35em;
-    left: 20em;
-    transition: 0.5s ease;
-  }
-
-    .side-text2:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.2);
-    transition: 0.5s ease;
-  }
-
-  .side-text2 h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #476842;
-  }
-
-  .side-text2 ul {
-    padding-left: 1em;
-  }
-
-  .side-text2 li {
-    margin-bottom: 8px;
-  }
-
- button {
-    background-color: #7CA982;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #5e7c5b;
-    opacity: 40%;
-  }
-
-  label {
-    display: block;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 6px;
-    color: #476842;
-  }
-
-    @media (max-width: 900px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .side-text {
-      width: 90%;
-      margin-bottom: 20px;
-    }
-    form {
-      max-width: 90%;
-      margin-top: 2em;
-    }
-  }
-
-/* Tablet view (≤1024px) */
-@media (max-width: 1024px) {
-  form {
-    left: 0;
-    margin: 3em auto 2em auto;
-    position: static;
-  }
-
-  .side-text,
-  .side-text2 {
-    width: 80%;
-    margin: 2em auto;
-    position: static;
-    bottom: auto;
-    left: auto;
-  }
-}
-
-/* Mobile view (≤600px) */
-@media (max-width: 600px) {
-  form,
-  .side-text,
-  .side-text2 {
-    width: 90%;
-    padding: 15px;
-    border-radius: 1.5em;
-  }
-
-  input, textarea {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  button {
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  .Head22 h1 {
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 0 1em;
-  }
-
-  nav a,
-  .mobile-nav a {
-    display: block;
-    margin: 10px 0;
-    text-align: center;
-  }
-}
+ <script src="script.js"></script>
+</body>
+</html>
