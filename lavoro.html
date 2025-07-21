@@ -102,13 +102,13 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function(){
-    emailjs.init("kRPKjnmZkdRUnvPP4"); // ← cambia con il tuo User ID da EmailJS
+    emailjs.init("j0rwZPcakizcN_p0l"); // ← updated User ID
   })();
 
   document.getElementById('cvForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_hlxn7oo', 'template_julnvm7', this)
+    emailjs.sendForm('service_97hrqva', 'template_u0vo8mk', this) // ← updated Service & Template ID
       .then(function(response) {
         document.getElementById('responseMessage').innerText = "Candidatura inviata con successo!";
       }, function(error) {
@@ -116,6 +116,7 @@
       });
   });
 </script>
+
 
 
 
