@@ -1,0 +1,62 @@
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.5s;
+    }
+
+    .container:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: 0.5s;
+    }
+
+    h1 {
+      text-align: center;
+      color: #7CA982;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      margin-top: 20px;
+      color: black;
+    }
+
+    .contact span {
+      display: block;
+      margin-top: 5px;
+    }
+
+    .gallery {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .gallery a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+    .imgServizi {
+      width: 20%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+      position: relative;
+      bottom: 30em;
+      left: 2em;
+    }
