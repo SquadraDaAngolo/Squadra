@@ -1,31 +1,19 @@
-function toggleMenu(element) {
-    element.classList.toggle("open");
-}
+  const toggle = document.querySelector('.mobile-nav-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
 
-const dropdown = document.querySelectorAll('.dropdown');
+  toggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
 
-dropdown.forEach(dropdown => {
-    const select = dropdown.querySelector('.select');
-    const caret = dropdown.querySelector('.caret');
-    const menu = dropdown.querySelector('.menu');
-    const options = dropdown.querySelector('.menu li');
-    const selected = dropdown.querySelector('.selected');
-
-    select.addEventListener('click', () => {
-        select.classList.toggle('select-clicked');
-        caret.classList.toggle('caret-rotate');
-        menu.classList.toggle('menu-open');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+        observer.unobserve(entry.target);
+      }
     });
+  }, { threshold: 0.1 });
 
-    options.forEach(option => {
-        options.addEventListener('click', () => {
-            selected.innerText = option.innerText;
-            select.classList.remove('select-clicked');
-            caret.classList.remove('caret-rotate');
-            options.forEach(option => {
-                options.classList.remove('active');
-            });
-            options.classList.add('active');
-        });
-    });
-});
+  document.querySelectorAll('.scroll-fade').forEach(el => {
+    observer.observe(el);
+  });
