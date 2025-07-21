@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavora con noi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="offerte.css">
+    <link rel="stylesheet" href="lavoro.css">
+    <link rel="icon" href="/photos/squadra.webp" type="image/png">
+</head>
+<body>
+  <header>
+<a href="inner.html">
+  <div class="logo">
+    <img src="photos/squadra.webp" alt="Logo" class="imgLogo" loading="lazy">
+  </div>
+</a>
+
+    <nav>
+      <a href="/inner.html">Home</a>
+      <a href="/lavoro.html">Lavora</a>
+      <a href="/galleria.html">Galleria</a>
+      <a href="/contatti.html">Contatti</a>
+      <a href="tel:+393792734599" class="number">+39 379 273 4599</a>
+    </nav>
+  </header>
+
+  <div class="mobile-nav-toggle" id="mobileToggle">&#9776;</div>
+
+<nav class="mobile-nav" id="mobileNav">
+  <a href="/inner.html">Home</a>
+  <a href="/lavoro.html">Lavora</a>
+  <a href="/galleria.html">Galleria</a>
+  <a href="/contatti.html">Contatti</a>
+</nav>
+
+<div class="Head22">
+    <h1 class="text1">Voui lavorare con noi?</h1>
+</div>
+
+<form id="cvForm" enctype="multipart/form-data">
+  <h2>Invia il tuo CV</h2>
+
+  <input type="text" name="nome" placeholder="Nome e Cognome" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="telefono" placeholder="Numero di telefono" required>
+  <input type="text" name="posizione" placeholder="Posizione desiderata (es. traslocco montaggio, ecc)" required>
+  <input type="url" name="linkedin" placeholder="Link al profilo LinkedIn (opzionale)">
+  
+  <textarea name="messaggio" placeholder="Lettera di presentazione / Messaggio" rows="5" required></textarea>
+  
+  <label>Carica il tuo CV:</label>
+  <input type="url" name="link_cv" placeholder="Inserisci link al CV (Drive, Dropbox, ecc.)" required>
+
+
+  <button type="submit">Invia candidatura</button>
+
+  <div id="responseMessage" style="margin-top: 10px; font-weight: bold;"></div>
+</form>
+
+<div class="side-text">
+  <h3>Competenze richieste</h3>
+    <ul>
+     <li>Capacità di lavorare in team</li>
+      <li>Età minima: 18 anni</li>
+      <li>Possesso di patente e automobile (preferibile)</li>
+      <li>Esperienza nel settore (preferibile)</li>
+      <li>Buone capacità comunicative in italiano e inglese</li>
+      <li>Residenza nella regione Lombardia, Italia</li>
+    </ul>
+  </div>
+</div>
+
+<div class="side-text2">
+  <h3>Una volta inviato il CV, cosa succede?</h3>
+  <ul>
+    <li>Ti contatteremo via mail per comunicarti se sei stato accettato o respinto. In seguito, ti telefoneremo per un colloquio vocale.</li>
+    <li>Discuteremo altri dettagli nel nostro gruppo WhatsApp.</li>
+    <li>Riceverai un buon stipendio alla fine del mese.</li>
+  </ul>
+</div>
+
+
+    <footer class="split-footer">
+      <div class="footer-logo">
+        <img src="photos/squadra.webp" alt="Squadra Logo" loading="lazy"/>
+      </div>
+      <div class="footer-text">
+        <p><strong>Cosa offriamo?</strong><br>
+          - Servizi di traslochi<br>
+          - Servizi di montaggi direttamente a casa tua</p>
+        <p><strong>Contatto:</strong><br>
+          <a href="tel:+393792734599">+39 379 273 4599</a><br>
+           <a href="https://wa.me/393792734599" target="_blank">WhatsApp</a> <br>
+          <a href="mailto:squadradangolo@gmail.com">squadradangolo@gmail.com</a></p>
+      </div>
+    </footer>
+  </section>
+
+ <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("kRPKjnmZkdRUnvPP4"); // ← cambia con il tuo User ID da EmailJS
+  })();
+
+  document.getElementById('cvForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_hlxn7oo', 'template_julnvm7', this)
+      .then(function(response) {
+        document.getElementById('responseMessage').innerText = "Candidatura inviata con successo!";
+      }, function(error) {
+        document.getElementById('responseMessage').innerText = "Errore durante l'invio. Riprova più tardi.";
+      });
+  });
+</script>
+
+
+
+</body>
+</html>
